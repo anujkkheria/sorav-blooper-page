@@ -7,6 +7,7 @@ import pic5 from './assets/5.jpeg'
 import pic6 from './assets/6.jpeg'
 import pic7 from './assets/7.jpeg'
 import pic8 from './assets/8.jpeg'
+import frame from './assets/frame.png'
 export default function BirthdayBlooperGallery() {
   const [confetti, setConfetti] = useState([])
   const [balloons, setBalloons] = useState([])
@@ -56,7 +57,7 @@ export default function BirthdayBlooperGallery() {
     {
       id: 1,
       img: pic3,
-      caption: 'That awkward moment...',
+      caption: 'That bean bag flight delay...',
       rotation: -3,
       delay: 0,
     },
@@ -78,14 +79,14 @@ export default function BirthdayBlooperGallery() {
     {
       id: 5,
       img: pic6,
-      caption: 'Another one for the books',
+      caption: 'Model Material 💃',
       rotation: -4,
       delay: 2,
     },
     {
       id: 6,
       img: pic4,
-      caption: 'The Trip Exhaustion',
+      caption: 'short depatures and deeper bonds',
       rotation: -4,
       delay: 2.5,
     },
@@ -96,7 +97,20 @@ export default function BirthdayBlooperGallery() {
       rotation: -4,
       delay: 3,
     },
-    { id: 8, img: pic2, caption: 'Never change! 😂', rotation: 2, delay: 3.5 },
+    {
+      id: 8,
+      img: pic2,
+      caption: 'Fashinista at the wedding ',
+      rotation: 2,
+      delay: 3.5,
+    },
+    {
+      id: 9,
+      img: frame,
+      caption: 'Tu bhi kya yaad rakhega',
+      rotation: 2,
+      delay: 4,
+    },
   ]
 
   return (
@@ -231,6 +245,7 @@ export default function BirthdayBlooperGallery() {
                   overflow: 'hidden',
                   position: 'relative',
                 }}
+                onClick={() => handleClick(photo.link)}
               >
                 <img
                   src={photo.img}

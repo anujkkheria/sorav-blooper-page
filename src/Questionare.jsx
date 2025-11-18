@@ -6,7 +6,13 @@ function Questionaire() {
   const [answers, setAnswers] = useState({ location: '', crush: '' })
 
   const correctAnswers = {
-    location: ['prestige', 'banglore', 'vasu', 'song of south india'],
+    location: [
+      'prestige',
+      'banglore',
+      'vasu',
+      'song of the south',
+      'prestige song of the south',
+    ],
     crush: ['karishma', 'ma', 'karimbai', 'karish', 'ka'],
   }
 
